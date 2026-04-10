@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram name="PRS ERD v1">
+    <mxGraphModel><root>
+      <mxCell id="0"/><mxCell id="1" parent="0"/>
+      <mxCell id="tenant" value="TENANT&#xa;PK tenant_no" style="rounded=1;" vertex="1" parent="1">
+        <mxGeometry x="100" y="100" width="180" height="80" as="geometry"/></mxCell>
+      <mxCell id="property" value="PROPERTY&#xa;PK prop_no" style="rounded=1;" vertex="1" parent="1">
+        <mxGeometry x="400" y="100" width="180" height="80" as="geometry"/></mxCell>
+      <mxCell id="owner" value="OWNER&#xa;PK owner_no" style="rounded=1;" vertex="1" parent="1">
+        <mxGeometry x="250" y="250" width="180" height="80" as="geometry"/></mxCell>
+    </root></mxGraphModel>
+  </diagram>
+</mxfile>
