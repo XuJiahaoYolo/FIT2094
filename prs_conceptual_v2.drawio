@@ -1,0 +1,49 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="PRS ERD v2 Connected" id="0">
+    <mxGraphModel dx="957" dy="659" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="tenant" parent="1" style="rounded=1;" value="TENANT&#xa;PK tenant_no&#xa;name, address, phone" vertex="1">
+          <mxGeometry height="120" width="200" x="50" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="property" parent="1" style="rounded=1;" value="PROPERTY&#xa;PK prop_no&#xa;address, value" vertex="1">
+          <mxGeometry height="120" width="200" x="350" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="owner" parent="1" style="rounded=1;" value="OWNER&#xa;PK owner_no&#xa;name" vertex="1">
+          <mxGeometry height="100" width="200" x="340" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="rent" parent="1" style="rounded=1;" value="RENT&#xa;PK tenant_no, prop_no, start_date" vertex="1">
+          <mxGeometry height="100" width="220" x="60" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="payment" parent="1" style="rounded=1;" value="PAYMENT&#xa;PK pay_no" vertex="1">
+          <mxGeometry height="100" width="200" x="600" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="damage" parent="1" style="rounded=1;" value="DAMAGE&#xa;PK prop_no, date, type" vertex="1">
+          <mxGeometry height="100" width="220" x="600" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="tenant" style="endArrow=none;" target="rent">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="rent" style="endArrow=none;" target="property">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="owner" style="endArrow=none;" target="property">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="tenant" style="endArrow=none;" target="payment">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="property" style="endArrow=none;" target="payment">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="property" style="endArrow=none;" target="damage">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="tenant" style="endArrow=none;" target="damage">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
